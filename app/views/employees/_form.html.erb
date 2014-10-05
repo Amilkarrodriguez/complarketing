@@ -7,8 +7,9 @@
   <%= error_span(@employee[:jobDescription]) %>
   <%= f.input :email %>
   <%= error_span(@employee[:email]) %>
+  <br>
 
   <%= f.button :submit, :class => 'btn-primary' %>
   <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
-                employees_path, :class => 'btn btn-default' %>
+                employees_path, :class => 'btn btn-info' %>
 <% end %>
